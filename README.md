@@ -92,14 +92,10 @@ If you'd like to reach out, feel free to connect via:
 
 This project was made possible thanks to the following open-source tools:
 
-- [React](https://reactjs.org/) – UI library  
-- [Vite](https://vitejs.dev/) – Build tool  
-- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript  
-- [Catppuccin](https://github.com/catppuccin/catppuccin) – Theme design  
-- [Geist Fonts](https://vercel.com/design/geist) – Font family  
-- [React Icons](https://react-icons.github.io/react-icons/) – SVG icons  
-- [ESLint](https://eslint.org/) – Linter  
-- [Prettier](https://prettier.io/) – Code formatter  
+- [React](https://reactjs.org/) – JavaScript library for building user interfaces.  
+- [React Icons](https://react-icons.github.io/react-icons/) – SVG icons for React applications.  
+- [Vite](https://vitejs.dev/) – Next-generation frontend tooling for fast builds.  
+- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript for better tooling.  
 
 ---
 
