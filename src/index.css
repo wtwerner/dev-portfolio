@@ -3,12 +3,13 @@
 ======================================== */
 body {
   margin: 0;
-  font-family: 'Geist', sans-serif;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--bg);
   color: var(--fg);
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 /* ======================================
@@ -28,20 +29,8 @@ body {
   --highlight: #a6d189;
   --button-bg: #f9e2af;
   --button-hover: #f5c2e7;
-  --rosewater: #dc8a78;
-  --flamingo: #dd7878;
-  --pink: #ea76cb;
-  --mauve: #8839ef;
-  --red: #d20f39;
-  --maroon: #e64553;
-  --peach: #fe640b;
-  --yellow: #df8e1d;
-  --green: #40a02b;
-  --teal: #179299;
-  --sky: #04a5e5;
-  --sapphire: #209fb5;
-  --blue: #1e66f5;
-  --lavender: #7287fd;
+  --code-bg: #e6e9ef;
+  --code-fg: #4c4f69;
 }
 
 /* Catppuccin Frappe (Dark Theme) */
@@ -58,20 +47,8 @@ body.dark-mode {
   --highlight: #94e2d5;
   --button-bg: #babbf1;
   --button-hover: #cba6f7;
-  --rosewater: #f2d5cf;
-  --flamingo: #eebebe;
-  --pink: #f4b8e4;
-  --mauve: #ca9ee6;
-  --red: #e78284;
-  --maroon: #ea999c;
-  --peach: #ef9f76;
-  --yellow: #e5c890;
-  --green: #a6d189;
-  --teal: #81c8be;
-  --sky: #99d1db;
-  --sapphire: #85c1dc;
-  --blue: #8caaee;
-  --lavender: #babbf1;
+  --code-bg: #1e1e2e;
+  --code-fg: #c6d0f5;
 }
 
 /* ======================================
@@ -80,7 +57,7 @@ body.dark-mode {
 h1,
 h2,
 h3 {
-  font-family: 'Geist', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -106,6 +83,24 @@ p {
   line-height: 1.8;
 }
 
+code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--code-bg);
+  color: var(--code-fg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-fg);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+}
+
 /* ======================================
    🔗 LINKS
 ======================================== */
@@ -127,13 +122,12 @@ section {
   padding: 4rem 2rem;
   margin: 2rem auto;
   max-width: 900px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--block-bg);
   border: 1px solid var(--block-border);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   scroll-margin-top: 80px;
-  /* Offset for fixed header */
 }
 
 body.dark-mode section {
@@ -149,7 +143,7 @@ section:hover {
 section h1,
 section h2,
 section h3 {
-  font-family: 'Geist', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   color: var(--header-fg);
 }
@@ -158,7 +152,7 @@ section h3 {
    🛠️ BUTTONS
 ======================================== */
 button {
-  font-family: 'Geist', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 6px;
@@ -245,4 +239,5 @@ footer {
   margin-top: 4rem;
   background: var(--bg);
   border-top: 1px solid var(--secondary);
+  font-family: 'JetBrains Mono', monospace;
 }
