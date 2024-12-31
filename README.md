@@ -1,50 +1,125 @@
-# React + TypeScript + Vite
+# 📚 **Tommy Werner - Developer Portfolio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Developer Portfolio**, a modern and responsive website showcasing my projects, skills, and experience.
 
-Currently, two official plugins are available:
+This project is built using **React + Vite** with **TypeScript** and designed using **Geist Fonts** and **Catppuccin themes** (*Frappe for Dark Mode, Latte for Light Mode*). It features smooth **dark/light mode toggling**, clear **section blocking**, and a **Credits section** to highlight the open-source tools that made this possible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 **Live Demo**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Check out the live version of the portfolio here:  
+👉 [https://wtwerner.dev](https://wtwerner.dev)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 **Screenshots**
+
+![Light Mode](https://via.placeholder.com/600x400?text=Light+Mode+Screenshot)
+![Dark Mode](https://via.placeholder.com/600x400?text=Dark+Mode+Screenshot)
+
+---
+
+## 🛠️ **Features**
+
+- 🎨 **Modern UI Design:** Clean and sleek interface with Catppuccin themes (Frappe & Latte).  
+- 🌗 **Dark/Light Mode:** Auto-detects browser preference with manual toggle switch.  
+- 📱 **Responsive Design:** Fully optimized for mobile, tablet, and desktop devices.  
+- 📚 **Project Showcase:** Grid-based layout to display featured projects.  
+- 📬 **Contact Section:** Easy access to reach out via email.  
+- 📝 **Credits Section:** Acknowledgment of open-source tools and libraries.  
+
+---
+
+## 💻 **Technologies Used**
+
+### **Frontend:**
+- ⚛️ **React** – Component-based UI library  
+- ⚡️ **Vite** – Lightning-fast build tool  
+- 🔄 **TypeScript** – Static type-checking for better tooling  
+- 🎨 **Catppuccin Themes** – Frappe (Dark) & Latte (Light)  
+- ✍️ **Geist Fonts** – Sleek and modern font style  
+
+### **Tooling:**
+- 🛡️ **ESLint** – Code linting and error prevention  
+- ✨ **Prettier** – Code formatting  
+- 🔗 **React Icons** – Beautiful SVG icons  
+
+### **Deployment:**
+- ▲ **Vercel** – Seamless deployment and hosting  
+- ☁️ **Cloudflare** – Custom domain and security  
+
+---
+
+## 🚀 **Getting Started**
+
+Follow these steps to run the portfolio locally on your machine:
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/yourusername/dev-portfolio.git
+cd dev-portfolio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### **2. Install Dependencies**
+```bash
+npm install
 ```
+
+### **3. Start the Development Server**
+```bash
+npm run dev
+```
+
+### **4. Open in Browser**
+Navigate to **[http://localhost:5173](http://localhost:5173)**.
+
+---
+
+## 📦 **Build for Production**
+```bash
+npm run build
+```
+
+The optimized static files will be generated in the `dist` folder.
+
+---
+
+## 📬 **Contact Me**
+
+If you'd like to reach out, feel free to connect via:
+
+- 📧 **Email:** [tommy@wtwerner.dev](mailto:tommy@wtwerner.dev)  
+- 💼 **LinkedIn:** [linkedin.com/in/wtwerner](https://linkedin.com/in/wtwerner)  
+- 🐙 **GitHub:** [github.com/wtwerner](https://github.com/wtwerner)
+
+---
+
+## 📝 **Credits**
+
+This project was made possible thanks to the following open-source tools:
+
+- [React](https://reactjs.org/) – UI library  
+- [Vite](https://vitejs.dev/) – Build tool  
+- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript  
+- [Catppuccin](https://github.com/catppuccin/catppuccin) – Theme design  
+- [Geist Fonts](https://vercel.com/design/geist) – Font family  
+- [React Icons](https://react-icons.github.io/react-icons/) – SVG icons  
+- [ESLint](https://eslint.org/) – Linter  
+- [Prettier](https://prettier.io/) – Code formatter  
+
+---
+
+## 🛡️ **License**
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
+## ⭐ **Show Your Support**
+
+If you like this project, please consider giving it a ⭐️ on GitHub!  
+
+Happy coding! 🚀✨
+
