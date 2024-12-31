@@ -9,7 +9,7 @@ function Credits() {
   return (
     <section id="credits">
       <h2>Credits</h2>
-      <p>This project was made possible thanks to these open-source tools and libraries:</p>
+      <p>This portfolio was made possible thanks to these open-source tools and libraries:</p>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         {tools.map((tool) => (
           <li key={tool.name} style={{ marginBottom: '1rem' }}>
