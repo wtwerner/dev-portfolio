@@ -13,13 +13,6 @@ This project is built using **React + Vite** with **TypeScript** and designed us
 
 ---
 
-## 📸 **Screenshots**
-
-![Light Mode](https://via.placeholder.com/600x400?text=Light+Mode+Screenshot)
-![Dark Mode](https://via.placeholder.com/600x400?text=Dark+Mode+Screenshot)
-
----
-
 ## 🛠️ **Features**
 
 - 🎨 **Modern UI Design:** Clean and sleek interface with Catppuccin themes (Frappe & Latte).  
