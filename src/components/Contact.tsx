@@ -4,9 +4,8 @@ function Contact() {
       <h2>Contact Me</h2>
       <p>
         Feel free to reach out at:
-        <a href="mailto:your.email@example.com"> your.email@example.com</a>
+        <a href="mailto:tommy@wtwerner.dev"> tommy@wtwerner.dev</a>
       </p>
-      <button>Email Me</button>
     </section>
   );
 }
