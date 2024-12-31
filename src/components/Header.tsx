@@ -9,65 +9,27 @@ function Header() {
   };
 
   return (
-    <header style={{ borderBottom: '1px solid var(--secondary)', backgroundColor: 'var(--bg)' }}>
-      <nav
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: '1rem 2rem',
-          maxWidth: '1200px',
-          margin: '0 auto',
-        }}
-      >
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Tommy Werner</h1>
-
-        {/* Navigation Links */}
-        <ul
-          style={{
-            display: 'flex',
-            gap: '1.5rem',
-            listStyle: 'none',
-            alignItems: 'center',
-            margin: 0,
-          }}
-          className="desktop-menu"
-        >
-          <li>
-            <a href="#about" style={{ color: 'var(--link)', textDecoration: 'none' }}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#projects" style={{ color: 'var(--link)', textDecoration: 'none' }}>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact" style={{ color: 'var(--link)', textDecoration: 'none' }}>
-              Contact
-            </a>
-          </li>
-          <li>
-            <ThemeToggle />
-          </li>
-        </ul>
+    <header>
+      <nav>
+        {/* Logo */}
+        <h1>Tommy Werner</h1>
 
         {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
-          style={{
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: '1.5rem',
-            display: 'none',
-          }}
           className="menu-toggle"
           aria-label="Toggle menu"
         >
           ☰
         </button>
+
+        {/* Navigation Links */}
+        <ul className={`menu ${menuOpen ? 'open' : ''}`}>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><ThemeToggle /></li>
+        </ul>
       </nav>
     </header>
   );
