@@ -39,13 +39,16 @@ function ThemeToggle() {
           background: theme === 'light' ? '#ccc' : '#4f5b66',
           borderRadius: '50px',
           transition: 'background 0.3s ease',
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
+        {/* Toggle Knob */}
         <div
           style={{
             position: 'absolute',
             top: '2px',
-            left: theme === 'light' ? '2px' : '26px',
+            left: theme === 'light' ? '2px' : 'calc(100% - 22px)',
             width: '20px',
             height: '20px',
             borderRadius: '50%',
