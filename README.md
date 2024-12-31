@@ -110,9 +110,4 @@ See the [LICENSE](./LICENSE) file for details.
 
 ---
 
-## ⭐ **Show Your Support**
-
-If you like this project, please consider giving it a ⭐️ on GitHub!  
-
 Happy coding! 🚀✨
-
