@@ -14,7 +14,7 @@ function Header() {
         {/* Logo */}
         <h1>
           <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            Tommy Werner
+            {'<'}Tommy Werner{'>'}
           </a>
         </h1>
 
