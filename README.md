@@ -8,7 +8,7 @@ This project is built using **React + Vite** with **TypeScript** and designed us
 
 ## 🌟 **Live Demo**
 
-Check out the live version of the portfolio here:  
+**TODO:** Check out the live version of the portfolio here:  
 👉 [https://wtwerner.dev](https://wtwerner.dev)
 
 ---
