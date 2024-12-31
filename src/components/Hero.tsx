@@ -1,9 +1,8 @@
 function Hero() {
   return (
     <section id="hero">
-      <h1>Hello, I'm Tommy Werner 👋</h1>
+      <h1>Hi, I'm Tommy 👋</h1>
       <p>Software Engineer specializing in Node.js, Go, and React.</p>
-      <button>View Projects</button>
     </section>
   );
 }
