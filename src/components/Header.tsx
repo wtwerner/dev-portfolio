@@ -12,7 +12,11 @@ function Header() {
     <header>
       <nav>
         {/* Logo */}
-        <h1>Tommy Werner</h1>
+        <h1>
+          <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            Tommy Werner
+          </a>
+        </h1>
 
         {/* Mobile Menu Toggle */}
         <button
