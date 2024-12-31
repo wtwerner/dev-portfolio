@@ -1,0 +1,334 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Catppuccin Latte (Light Theme) */
+:root {
+  --bg: #eff1f5;
+  --fg: #4c4f69;
+  --accent: #dc8a78;
+  --secondary: #7287fd;
+  --link: #7287fd;
+}
+
+/* Catppuccin Frappe (Dark Theme) */
+body.dark-mode {
+  --bg: #303446;
+  --fg: #c6d0f5;
+  --accent: #f38ba8;
+  --secondary: #a6e3a1;
+  --link: #89dceb;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+/* General Link Styles */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === Layout Spacing === */
+section {
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+  background: var(--bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === Headers === */
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* === Typography === */
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* === Buttons === */
+button {
+  font-family: 'Geist', sans-serif;
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--fg);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--secondary);
+}
+
+/* === Links === */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Grid Sections === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  background: var(--bg);
+  border-top: 1px solid var(--secondary);
+}
+
+/* === Header Adjustments === */
+header {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--link);
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.theme-toggle .switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle .switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .theme-toggle .switch {
+  background-color: #4f5b66;
+}
+
+body.dark-mode .theme-toggle .switch::after {
+  transform: translateX(26px);
+  background-color: #ffa500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: var(--bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 1000;
+  }
+}
+
+/* === Section Blocks === */
+section {
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  background: var(--block-bg, #f5f5f5);
+  /* Light Mode Default */
+  border: 1px solid var(--block-border, #e0e0e0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode section {
+  background: var(--block-bg, #2b2e3b);
+  /* Dark Mode Block Color */
+  border: 1px solid var(--block-border, #44475a);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* === Section Hover Effect === */
+section:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === Headers and Text in Sections === */
+section h1,
+section h2,
+section h3 {
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* === Credits Section === */
+#credits {
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  background: var(--block-bg, #f5f5f5);
+  border: 1px solid var(--block-border, #e0e0e0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #credits {
+  background: var(--block-bg, #2b2e3b);
+  border: 1px solid var(--block-border, #44475a);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#credits h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#credits p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+#credits ul {
+  padding: 0;
+  list-style: none;
+}
+
+#credits li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#credits a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#credits a:hover {
+  text-decoration: underline;
+}

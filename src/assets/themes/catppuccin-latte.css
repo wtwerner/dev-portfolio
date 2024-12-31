@@ -1,0 +1,13 @@
+/* Catppuccin Latte (Light Theme) */
+:root {
+  --bg: #eff1f5;
+  --fg: #4c4f69;
+  --accent: #dc8a78;
+  --secondary: #7287fd;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

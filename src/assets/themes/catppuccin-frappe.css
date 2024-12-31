@@ -1,0 +1,13 @@
+/* Catppuccin Frappe (Dark Theme) */
+:root {
+  --bg: #303446;
+  --fg: #c6d0f5;
+  --accent: #f38ba8;
+  --secondary: #a6e3a1;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
