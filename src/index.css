@@ -20,14 +20,28 @@ body {
   --fg: #4c4f69;
   --accent: #dc8a78;
   --secondary: #7287fd;
-  --link: #7287fd;
+  --link: #1e66f5;
   --header-bg: #e6e9ef;
   --header-fg: #3c3f4d;
-  --block-bg: #f5e0dc;
-  --block-border: #fab387;
+  --block-bg: #f0f4f8;
+  --block-border: #d9e2ec;
   --highlight: #a6d189;
   --button-bg: #f9e2af;
   --button-hover: #f5c2e7;
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
 }
 
 /* Catppuccin Frappe (Dark Theme) */
@@ -36,7 +50,7 @@ body.dark-mode {
   --fg: #c6d0f5;
   --accent: #f38ba8;
   --secondary: #a6e3a1;
-  --link: #89dceb;
+  --link: #8caaee;
   --header-bg: #252834;
   --header-fg: #e0e6f0;
   --block-bg: #414559;
@@ -44,6 +58,20 @@ body.dark-mode {
   --highlight: #94e2d5;
   --button-bg: #babbf1;
   --button-hover: #cba6f7;
+  --rosewater: #f2d5cf;
+  --flamingo: #eebebe;
+  --pink: #f4b8e4;
+  --mauve: #ca9ee6;
+  --red: #e78284;
+  --maroon: #ea999c;
+  --peach: #ef9f76;
+  --yellow: #e5c890;
+  --green: #a6d189;
+  --teal: #81c8be;
+  --sky: #99d1db;
+  --sapphire: #85c1dc;
+  --blue: #8caaee;
+  --lavender: #babbf1;
 }
 
 /* ======================================
@@ -59,14 +87,17 @@ h3 {
 
 h1 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--peach);
 }
 
 h2 {
   font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--blue);
 }
 
 h3 {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--green);
 }
 
 p {
@@ -86,6 +117,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: var(--sky);
 }
 
 /* ======================================
@@ -120,23 +152,6 @@ section h3 {
   font-family: 'Geist', sans-serif;
   font-weight: 700;
   color: var(--header-fg);
-}
-
-/* ======================================
-   🧩 GRID LAYOUT
-======================================== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
 }
 
 /* ======================================
@@ -184,6 +199,8 @@ nav {
   gap: 1.5rem;
   list-style: none;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-toggle {
@@ -197,6 +214,14 @@ nav {
 @media (max-width: 768px) {
   .menu {
     display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.open {
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -207,14 +232,6 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 1rem;
     z-index: 1000;
-  }
-
-  .menu.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 }
 
@@ -228,19 +245,4 @@ footer {
   margin-top: 4rem;
   background: var(--bg);
   border-top: 1px solid var(--secondary);
-}
-
-footer p {
-  margin: 0;
-  color: var(--fg);
-}
-
-footer a {
-  color: var(--link);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
