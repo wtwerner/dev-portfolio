@@ -57,7 +57,7 @@ Follow these steps to run the portfolio locally on your machine:
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/dev-portfolio.git
+git clone https://github.com/wtwerner/dev-portfolio.git
 cd dev-portfolio
 ```
 
